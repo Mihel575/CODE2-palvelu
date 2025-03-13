@@ -8,7 +8,7 @@ def app(environ, respond):
         if i%2 == 0:
             yield "Hello w€rld😞!".encode('utf-8')
         else:
-            yield "Bye w€rld😞!".encode('utf-8')
+            yield "Goodbye w€rld😞!".encode('utf-8')
             
 if __name__ == '__main__':
     with make_server("172.18.1.1", 8000, app) as server: 
